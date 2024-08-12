@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Response-templates</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body,
+			html {
+				font-family: 'Open Sans', sans-serif;
+				transition: all 0.3s ease-in-out;
+			}
+			.container {
+				width: 1200px;
+				padding: 0 20px;
+			}
+			.container-head {
+				display: flex;
+			}
+			.container-paragraph {
+				max-width: 700px;
+				margin-bottom: 50px;
+			}
+			.change-theme {
+				white-space: nowrap;
+				text-decoration: none;
+				color: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-head">
+			<div class="container">
+				<h1>Шаблоны откликов</h1>
+				<div class="container-block">
+					<h2>Отказ на совместную работу. Рекомендация другим.</h2>
+					<p class="container-paragraph">
+						Здравствуйте! К сожалению, не смогу Вам помочь. Однако, Вы всегда
+						можете рассчитывать на меня, если у Вас возникнут вопросы. Был бы
+						очень признателен, если бы Вы порекомендовали меня как
+						веб-разработчика Вашим друзьям или знакомым. Спасибо! Надеюсь, что
+						поработаем вместе.
+					</p>
+				</div>
+				<div class="container-block">
+					<h2>Отказ на совместную работу.</h2>
+					<p class="container-paragraph">
+						Здравствуйте! К сожалению, не смогу Вам помочь. Однако, Вы всегда
+						можете рассчитывать на меня, если у Вас возникнут вопросы. Надеюсь,
+						что поработаем вместе.
+					</p>
+				</div>
+				<div class="container-block">
+					<h2>Шаблон отклика.</h2>
+					<p class="container-paragraph">
+						Здравствуйте, с радостью внесу необходимые правки на 2 сайтах.
+						Подскажите, формы не работали изначально или после какие-то
+						изменений? Для начала мне потребуется доступ к сайту, чтобы провести
+						бесплатную диагностику, а затем подробно обсудим все детали заказа.
+						Цена и сроки предварительны. Надеюсь, что поработаем вместе! 🤝
+					</p>
+				</div>
+			</div>
+			<a href="#" class="change-theme">Изменить тему</a>
+		</div>
+		<script>
+			document.querySelector('.change-theme').addEventListener('click', () => {
+				if (
+					document.body.style.background === 'black' ||
+					document.body.style.color === 'white'
+				) {
+					document.body.style.background = 'white'
+					document.body.style.color = 'black'
+					document.querySelector('.change-theme').style.color = 'black'
+				} else {
+					document.body.style.background = 'black'
+					document.body.style.color = 'white'
+					document.querySelector('.change-theme').style.color = 'white'
+				}
+			})
+		</script>
+	</body>
+</html>
